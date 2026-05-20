@@ -50,7 +50,7 @@ export default function GraficoGastos({ data }: Props) {
               ))}
             </Pie>
             <Tooltip
-              formatter={(value: number) => fmt(value)}
+              formatter={(value) => fmt(Number(value))}
               contentStyle={{
                 backgroundColor: isLight ? '#fff' : '#1e293b',
                 border: `1px solid ${isLight ? '#e2e8f0' : '#334155'}`,
