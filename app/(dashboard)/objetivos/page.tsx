@@ -292,7 +292,7 @@ export default function ObjetivosPage() {
                     </div>
                   </div>
                   <div className="flex gap-1">
-                    <button onClick={()=>setEditando(obj)||setShowModal(true)}
+                    <button onClick={()=>{ setEditando(obj); setShowModal(true) }}
                       className="p-1.5 rounded-lg transition hover:bg-emerald-500/10" style={{ color:'var(--text-secondary)' }}>
                       <Pencil className="w-3.5 h-3.5"/>
                     </button>
